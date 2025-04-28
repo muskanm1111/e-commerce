@@ -59,7 +59,13 @@ const Header = () => {
             transition={{ duration: 0.5 }}
             className="flex items-center"
           >
-            <Image src="/logo.png" alt="Logo"  width={200} height={200} className="pb-2"  /> 
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={200}
+              height={200}
+              className="pb-2"
+            />
           </motion.div>
         </Link>
 
@@ -89,7 +95,7 @@ const Header = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setIsSearchOpen(!isSearchOpen)}
-            className="p-2 hover:text-primary transition-colors"
+            className="p-2 hover:text-primary hidden md:block transition-colors"
           >
             <FaSearch className="text-xl" />
           </motion.button>
@@ -151,7 +157,7 @@ const Header = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="absolute top-full left-0 w-full bg-white shadow-lg py-4"
+            className="absolute top-full left-0 w-full h-[200px] rounded-2xl bg-white shadow-lg py-4"
           >
             <div className="container mx-auto px-4">
               <div className="relative">
@@ -212,6 +218,16 @@ const Header = () => {
                 </Link>
               </motion.div>
             </nav>
+
+            {/* Search */}
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => setIsSearchOpen(!isSearchOpen)}
+              className="p-2 hover:text-primary transition-colors"
+            >
+              <FaSearch className="text-xl" />
+            </motion.button>
           </motion.div>
         )}
       </AnimatePresence>

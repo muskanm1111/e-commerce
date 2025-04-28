@@ -167,7 +167,7 @@ const CategoriesSection = () => {
                   {/* Footer */}
                   <div className="p-6 border-t border-gray-800">
                     <motion.div
-                      className="flex items-center justify-center space-x-2 text-primary group-hover:text-[var(--primary)] transition-colors duration-300"
+                      className="flex items-center justify-center space-x-2 text-black group-hover:text-[var(--primary)] transition-colors duration-300"
                       whileHover={{ x: 5 }}
                     >
                       <span className="font-semibold">Explore Collection</span>
