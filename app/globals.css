@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import fonts - adding premium e-commerce fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --primary: #c40000;
+  --primary-dark: #D10000;
+  --primary-light: #FF5555;
+  --secondary: #000000;
+  --secondary-light: #333333;
+  --gray-light: #F5F5F5;
+  --gray: #E0E0E0;
+  --gray-dark: #888888;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', sans-serif; /* Changed to Inter for better readability */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif; /* Changed to Poppins for modern headings */
+}
+
+/* Optional: For special featured headings or hero sections */
+.featured-heading {
+  font-family: 'Playfair Display', serif;
+}
+
+/* ... keep all existing code below unchanged ... */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center px-6 py-3 font-semibold transition-all duration-300 rounded-full;
+}
+
+.btn-primary {
+  @apply bg-[var(--primary)] text-white hover:bg-[var(--primary-dark)];
+}
+
+.btn-secondary {
+  @apply bg-[var(--secondary)] text-white hover:bg-[var(--secondary-light)];
+}
+
+.btn-outline {
+  @apply border-2 border-[var(--primary)] text-white hover:bg-[var(--primary)] hover:text-white;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.bg-grid-pattern {
+  background-image: radial-gradient(circle at 1px 1px, #cbd5e1 1px, transparent 0);
+  background-size: 40px 40px;
+}
+@layer utilities {
+  .mask-fade-out {
+    mask-image: linear-gradient(180deg, white, rgba(255,255,255,0));
+  }
+}
+
+@layer utilities {
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .bg-grid-pattern {
+    background-image: radial-gradient(circle at 1px 1px, #e5e7eb 1px, transparent 0);
+    background-size: 40px 40px;
+  }
+}
