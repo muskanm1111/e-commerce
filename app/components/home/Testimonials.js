@@ -142,39 +142,7 @@ const Testimonials = () => {
                 </div>
               </div>
 
-              {/* <div className="space-y-4">
-                <h4 className="font-bold text-lg mb-4">
-                  Transformation Results
-                </h4>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <div className="relative h-60 rounded-lg overflow-hidden">
-                      <Image
-                        src={testimonials[currentTestimonial].before}
-                        alt="Before transformation"
-                        fill
-                        style={{ objectFit: "cover" }}
-                      />
-                      <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2">
-                        Before
-                      </div>
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="relative h-60 rounded-lg overflow-hidden">
-                      <Image
-                        src={testimonials[currentTestimonial].after}
-                        alt="After transformation"
-                        fill
-                        style={{ objectFit: "cover" }}
-                      />
-                      <div className="absolute bottom-0 left-0 right-0 bg-primary text-white text-center py-2">
-                        After
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
+             
             </div>
           </motion.div>
 

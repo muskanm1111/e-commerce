@@ -165,24 +165,7 @@ const Hero = () => {
                   </button>
                 </motion.div>
 
-                {/* Features */}
-                {/* <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.8 }}
-                  className="flex flex-wrap gap-6 pt-8"
-                >
-                  {slides[currentSlide].features.map((feature, index) => (
-                    <div key={feature} className="flex items-center gap-2">
-                      <div
-                        className={`w-2 h-2 rounded-full bg-gradient-to-r ${slides[currentSlide].accent}`}
-                      />
-                      <span className="text-gray-300 text-sm font-medium">
-                        {feature}
-                      </span>
-                    </div>
-                  ))}
-                </motion.div> */}
+              
               </div>
 
               {/* Right Content - Product Preview */}

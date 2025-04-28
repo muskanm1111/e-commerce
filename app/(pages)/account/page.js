@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { FaUser, FaBox, FaHeart, FaCog, FaSignOutAlt, FaRupeeSign } from "react-icons/fa";
+import Image from "next/image";
 
 export default function AccountPage() {
   const [activeTab, setActiveTab] = useState("profile");
@@ -52,7 +53,7 @@ export default function AccountPage() {
               <div className="p-6 bg-primary text-white">
                 <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-4">
                   {user.image ? (
-                    <img
+                    <Image
                       src={user.image}
                       alt={user.name}
                       className="w-full h-full rounded-full object-cover"

@@ -163,7 +163,7 @@ const ProductList = ({ initialProducts }) => {
             <div className="flex flex-col items-center justify-center py-20">
               <h3 className="text-2xl font-bold mb-2">No Products Found</h3>
               <p className="text-gray-dark mb-6">
-                Try adjusting your filters to find what you're looking for.
+                Try adjusting your filters to find what you&apos;re looking for.
               </p>
               <button
                 onClick={() =>
