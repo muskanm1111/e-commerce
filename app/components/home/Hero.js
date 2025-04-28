@@ -128,7 +128,7 @@ const Hero = () => {
             </div>
 
             {/* Content Grid */}
-            <div className="relative max-w-7xl mx-auto px-4 z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-full pt-12">
+            <div className="relative max-w-7xl mx-auto px-4 z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-full md:pt-12">
               {/* Left Content */}
               <div className="space-y-8">
                 <motion.h1
