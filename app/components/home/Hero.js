@@ -77,7 +77,7 @@ const Hero = () => {
 
   return (
     <section
-      className="relative h-screen overflow-hidden bg-black"
+      className="relative h-[80vh] md:h-screen overflow-hidden bg-black"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -128,14 +128,14 @@ const Hero = () => {
             </div>
 
             {/* Content Grid */}
-            <div className="relative max-w-7xl mx-auto px-4 z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-full pt-20">
+            <div className="relative max-w-7xl mx-auto px-4 z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-full pt-12">
               {/* Left Content */}
               <div className="space-y-8">
                 <motion.h1
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
-                  className="text-5xl md:text-7xl font-bold text-white leading-tight whitespace-pre-line featured-heading"
+                  className="text-[40px] md:text-7xl font-bold text-white leading-tight whitespace-pre-line featured-heading"
                 >
                   {slides[currentSlide].title}
                 </motion.h1>
@@ -155,7 +155,7 @@ const Hero = () => {
                   transition={{ duration: 0.6, delay: 0.6 }}
                   className="flex flex-wrap gap-4"
                 >
-                  <button className="btn btn-primary flex items-center gap-2 group">
+                  <button className="btn btn-primary  flex items-center gap-3 group">
                     Shop Now
                     <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
                   </button>
@@ -164,8 +164,6 @@ const Hero = () => {
                     Watch Video
                   </button>
                 </motion.div>
-
-              
               </div>
 
               {/* Right Content - Product Preview */}
@@ -197,22 +195,22 @@ const Hero = () => {
         </div>
 
         {/* Navigation Arrows */}
-        <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between items-center px-4 md:px-8 z-20">
+        <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between items-center px-2  md:px-8 z-20">
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={prevSlide}
-            className="p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white"
+            className="p-2 md:p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white"
           >
-            <FaArrowRight className="w-6 h-6 rotate-180" />
+            <FaArrowRight className="w-4 md:w-6 h-4 md:h-6 rotate-180" />
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={nextSlide}
-            className="p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white"
+            className="p-2 md:p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white"
           >
-            <FaArrowRight className="w-6 h-6" />
+            <FaArrowRight className="w-4 md:w-6 h-4 md:h-6" />
           </motion.button>
         </div>
       </div>
